@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand New Shoots</title>
+
+    <link rel="stylesheet" href="page.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Permanent+Marker&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <header class="topbar">
+
+        <img src="logo.jpg.PNG" alt="Brand Logo" class="logo">
+
+        <div class="brand">
+            Brand New Shoots
+        </div>
+
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+    </header>
+
+    <!-- SIDE MENU -->
+    <nav id="sideMenu" class="side-menu">
+
+        <a onclick="showPage('home')">HOME</a>
+        <a onclick="showPage('about')">ABOUT</a>
+        <a onclick="showPage('services')">SERVICES</a>
+       <!--<a onclick="showPage('admin')">Admin Dashboard</a>
+        <a onclick="showPage('customer')">Customer Dashboard</a>
+        <a onclick="showPage('login')">Login</a>
+        <a onclick="showPage('payment')">Payment</a>
+        <a onclick="showPage('address')">Address</a>
+        <a onclick="showPage('terms')">Terms & Conditions</a>-->
+        <a onclick="showPage('contact')"> CONTACT US</a>
+        <!--<a onclick="showPage('social')">Social Media</a>-->
+
+    </nav>
+
+    <!-- HOME PAGE -->
+    <section id="home" class="active">
+        
+        <div class="home-header">
+
+            <!--<h1>Our Featured Work</h1> 
+            <p>
+                Capturing memories, creating stories, and delivering
+                professional photography and editing services.
+            </p>-->
+        </div>
+        
+        <section class="featured-videos">
+
+            <div class="video-showcase">
+                
+                <!-- Left Video -->
+                 
+                <div class="video-card side-card">
+
+                    <video autoplay muted loop playsinline>
+                        <source src="video1.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="video-info">
+
+                        <h3>Portrait Videography</h3>
+
+                        <p>
+                            We capture every smile, surprise and celebration,
+                            creating unforgettable birthday memories through
+                            professional photography and editing.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Center Video -->
+                <div class="video-card center-card">
+
+                    <video autoplay muted loop playsinline>
+                        <source src="video2.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="video-info">
+
+                        <h3>Wedding Videography</h3>
+
+                        <p>
+                            Cinematic wedding storytelling with elegant editing,
+                            preserving every emotional and memorable moment of
+                            your special day.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Right Video -->
+                <div class="video-card side-card">
+
+                    <video autoplay muted loop playsinline>
+                        <source src="video3.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="video-info">
+
+                        <h3>Birthday Videography</h3>
+
+                        <p>
+                            Professional birthday videography designed to showcase
+                            the joy, excitement, and memorable moments of your special day.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <a href="#" onclick="showPage('contact')" class="contact-btn">
+            <i class="fas fa-comment-dots"></i>
+            <span>📞 Call Us</span>
+        </a>
+    </section>
+
+
+    <!-- OTHER PAGES -->
+
+    <div id="about" class="page section-page">
+
+        <section class="about-section">
+
+            <div class="photo-frame">
+                <img src="myphoto.JPG.jpeg" alt="My Photo">
+            </div>
+
+            <h1 class="about-title">About Me</h1>
+
+            <p class="about-content">
+                Welcome to Brand New Shoots, where creativity meets storytelling.
+                We specialize in professional videography and advanced video editing services that transform precious moments into
+                timeless memories. Our passion is capturing emotions, expressions,
+                and unforgettable experiences with artistic excellence and
+                attention to detail.
+
+                From family celebrations to commercial projects, we strive to
+                deliver high-quality visuals that exceed expectations and bring
+                every vision to life.
+            </p>
+
+        </section>
+        <section class="expertise-section">
+
+            <h1>Our Expertise</h1>
+
+                <div class="expertise-grid">
+
+                    <div class="expertise-card">
+                        <h2>Birthday Videography</h2>
+                        <p>
+                            Professional birthday videography designed to showcase
+                            the joy, excitement, and memorable moments of your special day.
+                        </p>
+                    </div>
+
+                    <div class="expertise-card">
+                        <h2>Baby Videography</h2>
+                        <p>
+                            Our baby videography sessions focus on creating adorable,
+                            heartwarming videos that celebrate every precious stage
+                            of your little one's journey.
+                        </p>
+                    </div>
+
+                    <div class="expertise-card">
+                        <h2>Product Videography</h2>
+                        <p>
+                            Professional product videography designed to highlight
+                            details, quality, and brand value, helping businesses
+                            create a powerful visual impression.
+                        </p>
+                    </div>
+
+                    <div class="expertise-card">
+                        <h2>Couple Videography</h2>
+                        <p>
+                            Romantic and creative couple videography that beautifully
+                            captures love, connection, and unforgettable moments together.
+                        </p>
+                    </div>
+
+                </div>
+
+        </section>
+
+    </div>
+
+
+
+    <div id="services" class="page services-page">
+        <section class="services-section">
+
+            <p class="sub-title">
+                CREATING MEMORIES THROUGH VISUAL STORIES
+            </p>
+
+            <h1 class="main-title">
+                Moments Captured.
+                <span>Memories Created.</span>
+            </h1>
+
+            <div class="services-grid">
+
+                <!-- Cinematic Reels -->
+                <a  class="service-card">
+
+                    <video autoplay muted loop playsinline>
+                        <source src="reels.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="card-content">
+                        <h2>🎬 Cinematic Reels</h2>
+
+                        <p>
+                            Scroll-stopping portrait and landscape reels crafted with
+                            creative storytelling, smooth transitions, and cinematic visuals.
+                        </p>
+
+                    </div>
+                    
+                </a>
+
+                <!-- Wedding -->
+                <a  class="service-card">
+
+                    <video autoplay muted loop playsinline>
+                        <source src="wedding.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="card-content">
+                        <h2>💍 Wedding & Pre-Wedding</h2>
+
+                        <p>
+                            From the first smile to the final vows, we transform your
+                            love story into timeless memories filled with emotion and elegance.
+                        </p>
+                        
+                    </div>
+
+                </a>
+
+                <!-- Delivery -->
+                <a  class="service-card">
+
+                    <video autoplay muted loop playsinline>
+                        <source src="delivery.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="card-content">
+                        <h2>🚗 Car & Bike Deliveries</h2>
+
+                        <p>
+                            Celebrate your new ride with premium delivery films that
+                            capture excitement, pride, and every unforgettable moment.
+                        </p>
+                    </div>
+
+                </a>
+
+                <!-- Vehicle Shoots -->
+                <a  class="service-card">
+
+                    <video autoplay muted loop playsinline>
+                        <source src="vehicle.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="card-content">
+                        <h2>📸 Car & Bike Shoots</h2>
+
+                        <p>
+                            High-energy visuals and cinematic angles designed to
+                            showcase every machine with style and personality.
+                        </p>
+                    </div>
+
+                </a>
+
+                <!-- Brand -->
+                <a  class="service-card">
+
+                    <video autoplay muted loop playsinline>
+                        <source src="brand.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="card-content">
+                        <h2>🏢 Brand & Products</h2>
+
+                        <p>
+                            Eye-catching commercial content that highlights your
+                            products and helps your brand stand out.
+                        </p>
+                    </div>
+
+                </a>
+
+                <!-- Birthday -->
+                <a  class="service-card">
+
+                    <video autoplay muted loop playsinline>
+                        <source src="birthday.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="card-content">
+                        <h2>🎂 Birthdays & Celebrations</h2>
+
+                        <p>
+                            Every laugh, surprise, and celebration is beautifully
+                            preserved through vibrant visuals and cinematic storytelling.
+                        </p>
+                    </div>
+
+                </a>
+
+                <!-- Influencer -->
+                <a  class="service-card">
+
+                    <video autoplay muted loop playsinline>
+                        <source src="influencer.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="card-content">
+                        <h2>✨ Influencer Content</h2>
+
+                        <p>
+                            Trend-driven reels and creative visuals that help influencers
+                            build their identity and engage their audience.
+                        </p>
+                    </div>
+
+                </a>
+
+                <!-- Festival -->
+                <a  class="service-card">
+
+                    <video autoplay muted loop playsinline>
+                        <source src="festival.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="card-content">
+                        <h2>🎉 Festival Stories</h2>
+
+                        <p>
+                            Capturing the colors, traditions, and emotions of every
+                            festival with artistic compositions and cinematic editing.
+                        </p>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+        <a href="https://www.instagram.com/_brand_new_shoots_/"
+            target="_blank"
+            class="watch-reels-btn">
+
+            <img src="instagram.jpg" alt="Instagram" class="watch-icon">
+
+            <span>WATCH REELS</span>
+        </a>
+    </div>
+
+    <!--<div id="reelsPage" class="page section-page">
+
+        <section class="reels-container">
+
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="reels.mp4" type="video/mp4">
+            </video>
+
+            <h1>🎬 Cinematic Reels</h1>
+
+            <p class="reels-text">
+                We create premium cinematic reels that transform ordinary moments
+                into extraordinary visual stories. Every reel is crafted using
+                professional transitions, smooth camera movements, advanced color
+                grading, and creative storytelling techniques.
+            </p>
+
+            <div class="reel-grid">
+
+                <div class="reel-box">
+                    <video autoplay muted loop playsinline>
+                        <source src="portrait.mp4" type="video/mp4">
+                    </video>
+
+                    <h3>Portrait Reels</h3>
+
+                    <p>
+                        Elegant portrait reels designed to highlight personality,
+                        emotions, and cinematic beauty.
+                    </p>
+                </div>
+
+                <div class="reel-box">
+                    <video autoplay muted loop playsinline>
+                        <source src="travel.mp4" type="video/mp4">
+                    </video>
+
+                    <h3>Travel Reels</h3>
+
+                    <p>
+                        Dynamic travel stories with cinematic transitions and
+                        memorable visual experiences.
+                    </p>
+                </div>
+
+                <div class="reel-box">
+                    <video autoplay muted loop playsinline>
+                        <source src="creative.mp4" type="video/mp4">
+                    </video>
+
+                    <h3>Creative Reels</h3>
+
+                    <p>
+                        Social-media-ready reels that capture attention and
+                        enhance your personal brand.
+                    </p>
+                </div>
+
+            </div>
+
+            <button class="back-btn"
+                    onclick="showPage('services')">
+                ← Back to Services
+            </button>
+
+        </section>
+
+    </div>-->
+
+    <!--<div id="admin" class="page section-page">
+        <h1>Admin Dashboard</h1>
+    </div>
+
+    <div id="customer" class="page section-page">
+        <h1>Customer Dashboard</h1>
+    </div>
+
+    <div id="login" class="page section-page">
+        <h1>Login</h1>
+    </div>
+
+    <div id="payment" class="page section-page">
+        <h1>Payment</h1>
+    </div>
+
+    <div id="address" class="page section-page">
+        <h1>Address</h1>
+    </div>
+
+    <div id="terms" class="page section-page">
+        <h1>Terms & Conditions</h1>
+    </div--->
+
+
+
+
+    <div id="contact" class="page section-page">
+        <section class="contact-section">
+
+            <h1 class="contact-title">Get In Touch</h1>
+
+            <p class="contact-subtitle">
+                At Brand New Shots, we believe every moment tells a story worth preserving.
+                Whether you're planning a wedding, birthday celebration, baby shoot,
+                product showcase, cinematic reel, or any special occasion, our team is
+                passionate about turning your vision into unforgettable memories
+            </p>
+
+            <div class="contact-container">
+
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h2>Call Us</h2>
+                    <p>+91 99599 38417</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h2>Email</h2>
+                    <p>taruntarun86314@gmail.com</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h2>Address</h2>
+                    <p>
+                        Brand New Shots Studio<br>
+                        Nidadhavole, Andhra Pradesh<br>
+                        India
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">🕒</div>
+                    <h2>Working Hours</h2>
+                    <p>
+                        Monday - Sunday<br>
+                        9:00 AM - 9:00 PM
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="social-buttons">
+                <a href="https://instagram.com/_brand_new_shoots_"
+                target="_blank"
+                class="social-btn instagram">
+
+                    <img src="instagram.jpg" alt="Instagram">
+                    <span>Instagram</span>
+
+                </a>
+
+                <!--a href="https://youtube.com/@your_channel"
+                target="_blank"
+                class="social-btn youtube">
+
+                    <img src="youtube.png" alt="YouTube">
+                    <span>YouTube</span>
+
+                </a>
+
+                <a href="https://facebook.com/your_page"
+                target="_blank"
+                class="social-btn facebook">
+
+                    <img src="facebook.png" alt="Facebook">
+                    <span>Facebook</span>
+
+                </a>-->
+
+            </div>
+
+            <a href="https://wa.me/919959938417"
+                target="_blank"
+                class="floating-whatsapp">
+
+                <img src="whatsapp.webp"
+                alt="WhatsApp"
+                class="floating-whatsapp-icon">
+
+                <span>WHATSAPP US</span>
+
+            </a>
+
+        </section>
+    </div>
+
+    <!--<div id="social" class="page section-page">
+        <h1>Social Media</h1>
+    </div>--->
+
+    <script src="page.js"></script>
+
+</body>
+
+</html>

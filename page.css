@@ -297,8 +297,11 @@ body {
     .video-showcase{
         flex-direction:column;
         align-items:center;
+        .service-card {
+            margin-bottom: 40px;
+        }
         gap:30px;
-        margin-bottom: 30px;
+        
     }
 
     .side-card,
